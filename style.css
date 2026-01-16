@@ -1,0 +1,135 @@
+/* =========================
+   Global 基本設定
+   ========================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #00ff66;
+    font-family: monospace;
+    line-height: 1.6;
+}
+
+/* =========================
+   Matrix 背景 Canvas
+   ========================= */
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* =========================
+   導覽列
+   ========================= */
+nav {
+    padding: 15px 30px;
+    border-bottom: 1px solid #00ff66;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+nav a {
+    color: #00ff66;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   主內容容器
+   ========================= */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* =========================
+   標題
+   ========================= */
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   卡片（暗色 UI）
+   ========================= */
+.card {
+    background: #050505;
+    border: 1px solid #00ff66;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(0, 255, 100, 0.25);
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(0, 255, 100, 0.45);
+}
+
+/* =========================
+   Members 卡片排版
+   ========================= */
+.card svg {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   文字細節
+   ========================= */
+p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* =========================
+   終端機感邊框（可選）
+   ========================= */
+.terminal {
+    border: 1px solid #00ff66;
+    padding: 15px;
+    background: #020202;
+}
+
+.terminal::before {
+    content: "user@infosec:~$ ";
+    opacity: 0.7;
+}
+
+/* =========================
+   響應式（手機）
+   ========================= */
+@media (max-width: 600px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
